@@ -1,8 +1,8 @@
 package com.danielane.shoplist.domain
 
-class GetShopItemCase {
+class GetShopItemCase(private val shopItemRepository: ShopItemRepository) {
 
     fun getShopItem(itemId: Int): ShopItem{
-        TODO()
+        return shopItemRepository.getShopItem(itemId)
     }
 }
